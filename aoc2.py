@@ -22,6 +22,6 @@ for i in range(len(passwords)):
     kosh1 = char == char1
     kosh2 = char == char2
 
-    m = m + (kosh1 * (not kosh2) + (not kosh1) * kosh2)
+    m = m + (kosh1 != kosh2)
 
 print(n,m)
